@@ -14,7 +14,7 @@ public class AppTest {
     public void getTypeStringTest() {
         assertAll("patternTest",
                 () -> assertEquals(getTypeString("alexey.work@tut.by"), StringType.EMAIL),
-                () -> assertEquals(getTypeString("624-75-18"), StringType.PHONE),
+                () -> assertEquals(getTypeString("624-75-22"), StringType.PHONE),
                 () -> assertEquals(getTypeString("6247516"), StringType.NONE),
                 () -> assertEquals(getTypeString("Смирнов"), StringType.FAMILY),
                 () -> assertEquals(getTypeString("Третьякова-Сотникова"), StringType.FAMILY),
